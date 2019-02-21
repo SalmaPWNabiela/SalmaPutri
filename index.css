@@ -1,0 +1,38 @@
+
+*{
+	box-sizing: border-box;
+	font-family: Bahnschrift, sans-serif;
+}
+
+body{
+	display:table;
+	width:100%;
+	height:auto;
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('../bg.jpg');
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+}
+
+.layar{
+	height: 60px;
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.card{
+	margin-top: 135px;
+	margin-left: 330px;
+}
+
+.masuk{
+	width: 100%;
+	padding-right: 230px;
+	margin-left: 0px;
+}
+
+.alert{
+	margin-top: 10px;
+}

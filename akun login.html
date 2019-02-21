@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link Bootstarp Css -->
+	<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/index.css">
+	<!-- Link Bootstrap Js -->
+	<script src="asset/js/jquery.min.js"></script>
+	<script src="asset/js/popper.min.js"></script>
+	<script src="asset/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		function validasi() {
+			var name = document.getElementById('user').value;
+			var password = document.getElementById('pass').value;
+			var hapus = '';
+			var element = '';
+
+			if(name == 'salma' && password == 'salmaaa'){
+				element += '<div class="alert alert-success alert-dismissable">';
+				element += '<span class="close" data-dismiss="alert">&times;</span>';
+				element += '<h5>Login Berhasil</h5>';
+				element += '</div>';
+			}else{
+				element += '<div class="alert alert-danger alert-dismissable">';
+				element += '<span class="close" data-dismiss="alert">&times;</span>';
+				element += '<h5>Login Gagal</h5>';
+				element += '</div>';
+			}
+
+			document.getElementById('login-footer').innerHTML += element;
+			document.getElementById('login-body').innerHTML += hapus;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="card col-sm-5">
+			<div class="card-header bg-success text-white text-center">
+				<h4>Login</h4>
+			</div>
+			<div class="card-body" id="login-body">
+				<div class="row">
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" class="form-control masuk" id="user">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control masuk" id="pass">
+					</div>
+				</div>
+			</div>
+			<div class="card-footer" id="login-footer">
+				<div class="row">
+					<button type="button" class="btn btn-success btn-block" onclick="validasi();">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
